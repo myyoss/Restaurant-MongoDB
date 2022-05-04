@@ -13,7 +13,6 @@ OWNER CAN:
 -SORT
 
 
-SOLD TO CLIENT (school project)
 
 
 ![Screenshot](https://user-images.githubusercontent.com/93940739/165074939-27b7debe-b738-4529-b48c-6a9790248ad7.jpg)
