@@ -2,15 +2,7 @@
 
 F&amp;S Global Delicious Restaurant WEB APP
 
-OWNER CAN:
-
--ADD
-
--UPDATE
-
--DELETE
-
--SORT
+OWNER CAN ADD-UPDATE-DELETE-SORT ITEMS
 
 
 
