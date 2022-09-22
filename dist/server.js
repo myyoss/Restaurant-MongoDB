@@ -14,11 +14,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
-const app = (0, express_1.default)();
+const app = express_1.default();
 const port = 3005;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
-mongoose_1.default.connect('mongodb+srv://asnafy:ZyTcRnGlhXYqaYjE@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
+mongoose_1.default.connect('mongodb+srv://asnafy:0n7imGXNihDbr169@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
 const ProductSchema = new mongoose_1.default.Schema({
     category: String,
     name: String,
@@ -82,4 +82,3 @@ app.delete('/delete-product', (req, res) => __awaiter(void 0, void 0, void 0, fu
 app.listen(port, () => {
     return console.log(`Express is listening at http://localhost:${port}`);
 });
-//# sourceMappingURL=server.js.map

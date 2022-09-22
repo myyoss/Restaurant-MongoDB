@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 
-mongoose.connect('mongodb+srv://asnafy:ZyTcRnGlhXYqaYjE@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://asnafy:0n7imGXNihDbr169@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
 
 const ProductSchema = new mongoose.Schema({
   category: String,
