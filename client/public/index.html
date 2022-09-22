@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&S RestaurantS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.js"
+        integrity="sha512-MNW6IbpNuZZ2VH9ngFhzh6cUt8L/0rSVa60F8L22K1H72ro4Ki3M/816eSDLnhICu7vwH/+/yb8oB3BtBLhMsA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body onload="loadPage(event)">
+    <div class="header">
+        <div>
+            <h1><a href=""><span
+                        style="color: red; border: 3px dotted white; background-color: rgba(255, 255, 255, 0.24); font-weight: bolder; padding: 4px;">
+                        F<span style="color: #ffffff;">&</span>S</span></a> Restaurant<span
+                    style="color: red; font-weight: bolder;">S</span></h1>
+        </div>
+        <div>
+            <h2>since 1979 </h2>
+        </div>
+        <div><img style="background-color: #ffffff9d;" src="./images/logo.png" alt=""></div>
+    </div>
+    <div class="nav">
+        <form class="add" onsubmit="handleAdd(event)">
+            <select name="category" class="select">
+                <option value="">All Kitchens</option>
+                <option value="Israeli">Israeli</option>
+                <option value="American">American</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Drinks">Drinks</option>
+            </select>
+            <!-- <input type="text" name="category" placeholder="category"> -->
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="price" placeholder="price">
+            <input type="text" name="img" placeholder="Add img..." value="\images\kabab.png">
+            <input class="submit" type="submit" value="Add Product">
+        </form>
+
+        <button onclick="handleGetAllProducts(event)">Get <span style="color: #ff9100; font-weight: bold;">
+                All</span> Products</button>
+        <button onclick="handleGetProductByNameIsraeli(event)">Get <span
+                style="color: #ff0000; font-weight: bold;">Israeli</span> Food</button>
+        <button onclick="handleGetProductByNameAmerican(event)">Get <span
+                style="color: #ff0000; font-weight: bold;">American</span> Food</button>
+        <button onclick="handleGetProductByNameItalian(event)">Get <span
+                style="color: #ff0000; font-weight: bold;">Italian</span> Food</button>
+        <button onclick="handleGetProductByNameJapanese(event)">Get <span
+                style="color: #ff0000; font-weight: bold;">Japanese</span> Food</button>
+        <button onclick="handleGetProductByNameDrinks(event)">Get <span
+                style="color: #ff0000; font-weight: bold;">Drinks</span> Food</button>
+    </div>
+    <div id="root"></div>
+
+    <footer>
+        <div></div>
+        <div></div>
+        <div>
+            <p>&copy; Copyright F&S 2022. All Rights Reserved.</p>
+        </div>
+        <div></div>
+        <div class="social"><img src="./images/social-media.png" alt=""></div>
+    </footer>
+    <script src="./dist/index.js"></script>
+</body>
+
+</html>
