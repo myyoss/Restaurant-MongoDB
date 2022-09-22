@@ -18,7 +18,7 @@ const app = express_1.default();
 const port = 3005;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
-mongoose_1.default.connect('mongodb+srv://asnafy:0n7imGXNihDbr169@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
+mongoose_1.default.connect('mongodb+srv://asnafy:E6bXp1TD4Aqst68x@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
 const ProductSchema = new mongoose_1.default.Schema({
     category: String,
     name: String,
