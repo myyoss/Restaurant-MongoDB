@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "server.ts",
   "scripts": {
+    "tsc": "tsc",
+    "start": "node dist/server.js",
+    "postinstall": "npm run tsc && cd client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
