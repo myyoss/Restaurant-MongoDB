@@ -56,14 +56,29 @@ a {
   padding-bottom: 10px;
 }
 
-input, .select {
+input, .submit,
+.select {
   color: black;
   font-size: 22px;
-  height: 24px;
+  height: 28px;
+  padding: 0%;
+  margin: 0%;
+}
+input .option, .submit .option,
+.select .option {
+  color: #bd1c1c;
+  font-size: 22px;
+  min-height: 28px;
+}
+
+.select {
+  color: #9e0f0f;
+  min-height: 32px;
 }
 
 .submit {
   cursor: pointer;
+  min-height: 32px;
 }
 
 .product {

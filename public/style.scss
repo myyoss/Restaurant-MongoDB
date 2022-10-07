@@ -44,7 +44,8 @@ a {
         padding: 8px;
 
     }
-    h2{
+
+    h2 {
         font-size: 20px;
         color: #ff0000;
     }
@@ -56,19 +57,40 @@ a {
     padding: 10px 10px;
     border-radius: 2px;
     border-bottom: 2px solid #ffffff;
-    .add{
+
+    .add {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 0.2em;
         padding-bottom: 10px;
     }
 }
 
-input, .select {
+input, .submit,
+.select {
     color: rgb(0, 0, 0);
     font-size: 22px;
-    height: 24px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+
+    .option {
+        color: rgb(189, 28, 28);
+        font-size: 22px;
+        min-height: 28px;
+    }
+}
+
+.select {
+    color: rgb(158, 15, 15);
+    min-height: 32px;
 }
 
 .submit {
     cursor: pointer;
+    min-height: 32px;
 }
 
 .product {
@@ -135,11 +157,13 @@ footer {
     align-items: center;
     border-radius: 4px;
     margin-top: 20px;
-    img{
+
+    img {
         width: 80%;
         object-fit: contain;
     }
-    .social{
+
+    .social {
         cursor: pointer;
     }
 }
