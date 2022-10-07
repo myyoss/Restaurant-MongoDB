@@ -14,11 +14,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
+require('dotenv').config(); //===> insert high as possible, before routs
 const app = express_1.default();
-const port = 3005;
+const port = process.env.PORT || 3123;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
-mongoose_1.default.connect('mongodb+srv://asnafy:E6bXp1TD4Aqst68x@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
+const uri = process.env.MONGODB_URI;
+mongoose_1.default.connect(uri);
 const ProductSchema = new mongoose_1.default.Schema({
     category: String,
     name: String,

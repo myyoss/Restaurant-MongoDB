@@ -1,13 +1,14 @@
 import express from "express";
 import mongoose from 'mongoose';
+require('dotenv').config() //===> insert high as possible, before routs
 const app = express();
-const port: number = 3005;
+const port = process.env.PORT || 3123;
 
 app.use(express.static("public"));
 app.use(express.json());
 
-
-mongoose.connect('mongodb+srv://asnafy:E6bXp1TD4Aqst68x@cluster0.xgv3d.mongodb.net/yossi-test?retryWrites=true&w=majority');
+const uri:any = process.env.MONGODB_URI;
+mongoose.connect(uri);
 
 const ProductSchema = new mongoose.Schema({
   category: String,
@@ -16,7 +17,7 @@ const ProductSchema = new mongoose.Schema({
   img: String
 }) 
 
-const Product = mongoose.model('product', ProductSchema);
+const Product = mongoose.model('product', ProductSchema); 
 
 
 
