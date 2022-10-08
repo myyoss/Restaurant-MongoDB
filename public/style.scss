@@ -58,17 +58,26 @@ a {
     border-radius: 2px;
     border-bottom: 2px solid #ffffff;
 
+    .addProduct,.searchProduct {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+    }
+.searchProduct{
+    button{
+        box-sizing: border-box;
+        // height: 3em;
+        font-size: 0.8em;
+    }
+}
     .add {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: center;
-        // gap: 0.2em;
         padding-bottom: 10px;
     }
 }
 
-input, .submit,
+input,
 .select {
     color: rgb(0, 0, 0);
     font-size: 22px;
@@ -77,20 +86,20 @@ input, .submit,
     margin: 0%;
 
     .option {
-        color: rgb(189, 28, 28);
         font-size: 22px;
         min-height: 28px;
     }
 }
 
 .select {
-    color: rgb(158, 15, 15);
     min-height: 32px;
 }
 
 .submit {
     cursor: pointer;
     min-height: 32px;
+    color: rgb(189, 28, 28);
+    padding: 2px;
 }
 
 .product {
@@ -135,9 +144,9 @@ input, .submit,
     }
 }
 
-// div {
-//     border: 1px solid red;
-// }
+div {
+    border: 1px solid red;
+}
 
 #root {
     display: flex;

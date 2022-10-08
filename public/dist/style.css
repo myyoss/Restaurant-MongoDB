@@ -52,11 +52,22 @@ a {
   border-radius: 2px;
   border-bottom: 2px solid #ffffff;
 }
+.nav .addProduct, .nav .searchProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+.nav .searchProduct button {
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
 .nav .add {
   padding-bottom: 10px;
 }
 
-input, .submit,
+input,
 .select {
   color: black;
   font-size: 22px;
@@ -64,21 +75,21 @@ input, .submit,
   padding: 0%;
   margin: 0%;
 }
-input .option, .submit .option,
+input .option,
 .select .option {
-  color: #bd1c1c;
   font-size: 22px;
   min-height: 28px;
 }
 
 .select {
-  color: #9e0f0f;
   min-height: 32px;
 }
 
 .submit {
   cursor: pointer;
   min-height: 32px;
+  color: #bd1c1c;
+  padding: 2px;
 }
 
 .product {
@@ -116,6 +127,10 @@ input .option, .submit .option,
   color: #000;
   font-size: larger;
   font-weight: bold;
+}
+
+div {
+  border: 1px solid red;
 }
 
 #root {
