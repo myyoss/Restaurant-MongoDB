@@ -1,8 +1,12 @@
 # Restaurant-MongooDB
 
+LIVE DEMO:
+
+https://restaurant-mongoodb.onrender.com/
+
 F&amp;S Global Delicious Restaurant WEB APP
 
-OWNER CAN ADD-UPDATE-DELETE-SORT ITEMS
+Owner can Add item, Update item, Deletet item, Sort items by categpries.
 
 
 
