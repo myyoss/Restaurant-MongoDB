@@ -1,3 +1,7 @@
+div {
+    // border: 1px solid red;
+}
+
 body {
     font-family: sans-serif;
     width: 90%;
@@ -48,10 +52,14 @@ a {
     h2 {
         font-size: 20px;
         color: #ff0000;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 20px;
     background-color: #ffffff9d;
     padding: 10px 10px;
@@ -59,45 +67,81 @@ a {
     border-bottom: 2px solid #ffffff;
 
     .add {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: center;
-        // gap: 0.2em;
-        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 0.6rem;
+
+        .inputFields {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+
+            input {
+                font-size: medium;
+                height: 20px;
+                border-radius: 2px;
+                border-width: 1px;
+            }
+        }
+
+        .inputSubmitProduct {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+
+            input {
+                background-color: #ff00006b;
+                font-size: medium;
+                cursor: pointer;
+                border: none;
+                margin: 0%;
+                padding: 4px;
+                border-radius: 2px;
+
+            }
+        }
+
+        .selectWrapper {
+            margin: 0%;
+            padding: 0%;
+
+            .select {
+                height: 22px;
+                font-size: medium;
+                color: rgb(189, 28, 28);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+
+                option {}
+            }
+        }
+
     }
 }
 
-input, .submit,
-.select {
-    color: rgb(0, 0, 0);
-    font-size: 22px;
-    height: 28px;
-    padding: 0%;
-    margin: 0%;
+.sorts {
+    padding-left: 10px;
 
-    .option {
-        color: rgb(189, 28, 28);
-        font-size: 22px;
-        min-height: 28px;
+    button {
+        border-radius: 2px;
     }
-}
-
-.select {
-    color: rgb(158, 15, 15);
-    min-height: 32px;
-}
-
-.submit {
-    cursor: pointer;
-    min-height: 32px;
 }
 
 .product {
     background-color: rgb(246, 246, 246);
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -106,23 +150,30 @@ input, .submit,
     margin: 10px;
     box-shadow: 0px 0px 6px white;
 
-    img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: contain;
-        // padding-left: 30px;
-        transition: all .3s ease-in-out;
-        cursor: pointer;
+    .imgWrapper {
+        width: 10rem;
+        height: 10rem;
+        padding-top: 1rem;
+        margin: auto;
+
+        img {
+            width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+            transition: all .3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
     }
 
-    img:hover {
-        transform: scale(1.05);
-    }
 
     .productName,
     .productprice {
         display: flex;
         justify-content: center;
+        align-items: center;
         color: rgb(255, 255, 255);
         background-color: #ff9100a8;
         border-radius: 2px;
@@ -133,11 +184,48 @@ input, .submit,
         font-size: larger;
         font-weight: bold;
     }
+
+    .updatesWrapper {
+        input {
+            font-size: medium;
+            border-radius: 2px;
+            border-width: 1px;
+        }
+    }
+
+    .buttonsWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            font-size: 1rem;
+            border-radius: 2px;
+            // background-color: #ff00006b;
+        }
+
+        .DeleteItem{
+            button{
+                background-color: #ff91007a;
+            }
+        }
+        .UpdateDetails{
+            button{
+                background-color: #65b1187a;
+            }
+        }
+        
+    }
+
+    h3 {
+        font-size: large;
+        color: black;
+        margin: 0%;
+        padding: 0%;
+
+    }
 }
 
-// div {
-//     border: 1px solid red;
-// }
 
 #root {
     display: flex;
@@ -155,7 +243,7 @@ footer {
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-top: 20px;
 
     img {
@@ -167,3 +255,48 @@ footer {
         cursor: pointer;
     }
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+    .header {
+        // margin-top: 30px;
+        // display: grid;
+        // grid-template-columns: 6fr 0.5fr 1fr;
+        // align-items: center;
+        // border-top: 2px solid #ffffff;
+        // border-bottom: 2px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    h1{
+        font-size: 30px;
+    }
+    .logoWrapper{
+        display: flex;
+        justify-content: center;
+        width: 3rem;
+        margin: auto;
+    }
+        img {
+            width: 100%;
+            object-fit: contain;
+            margin-top: 10px;
+            border: 3px dotted white;
+            padding: 8px;
+        }
+    
+    }
+
+    footer {
+        color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        p{
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+

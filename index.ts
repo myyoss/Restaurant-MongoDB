@@ -93,18 +93,11 @@ function renderAll(root, data) {
         <div class="productName"><span style="color: #000;"></span>${product.name}</div>
         <div class="productprice"><span style="color: #000;"></span>${product.price}&#8362;
         </div>
-        <div class="imgWrapper"><img src="${product.img}" alt=""></div>
-        <div><h3>Change Details:<h/3></div>
-        <div class="updatesWrapper">
+        <div><img src="${product.img}" alt=""></div>
         <div><input type="text" placeholder="name" value="${product.name}" onblur="handleUpdateName(event, '${product._id}')"/></div>
         <div><input type="text" placeholder="price" value="${product.price}" onblur="handleUpdatePrice(event, '${product._id}')"/></div>
-        </div>
-        <div class="buttonsWrapper">
-        <div class="UpdateDetails"><button>Update Details</button></div>
-        <div class="DeleteItem"><button onclick="handleDelete('${product._id}')">Delete Item</button></div>
-        </div>
-
-
+        
+        <div><button onclick="handleDelete('${product._id}')">DELETE</button></div>
         </div>
         `
     });
