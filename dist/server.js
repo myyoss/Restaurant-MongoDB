@@ -16,7 +16,7 @@ const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
 require("dotenv").config(); //===> insert high as possible, before routs
 const app = express_1.default();
-const port = process.env.PORT || 3300;
+const port = process.env.PORT || 3400;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
 const uri = process.env.MONGODB_URI;
