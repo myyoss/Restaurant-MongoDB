@@ -1,6 +1,6 @@
-div {
-    // border: 1px solid red;
-}
+// div {
+//     border: 1px solid red;
+// }
 
 body {
     font-family: sans-serif;
@@ -10,7 +10,6 @@ body {
     font-size: 20px;
     margin: auto;
     background-image: url("../../images/background.jpg");
-    // background-repeat: no-repeat;
     background-size: contain;
 
     h1 {
@@ -46,7 +45,6 @@ a {
         margin-top: 10px;
         border: 3px dotted white;
         padding: 8px;
-
     }
 
     h2 {
@@ -59,7 +57,6 @@ a {
 .nav {
     display: flex;
     flex-direction: column;
-
     margin-bottom: 20px;
     background-color: #ffffff9d;
     padding: 10px 10px;
@@ -105,7 +102,6 @@ a {
                 margin: 0%;
                 padding: 4px;
                 border-radius: 2px;
-
             }
         }
 
@@ -121,11 +117,8 @@ a {
                 justify-content: center;
                 align-items: center;
                 border-radius: 2px;
-
-                option {}
             }
         }
-
     }
 }
 
@@ -168,7 +161,6 @@ a {
         }
     }
 
-
     .productName,
     .productprice {
         display: flex;
@@ -204,17 +196,17 @@ a {
             // background-color: #ff00006b;
         }
 
-        .DeleteItem{
-            button{
+        .DeleteItem {
+            button {
                 background-color: #ff91007a;
             }
         }
-        .UpdateDetails{
-            button{
+
+        .UpdateDetails {
+            button {
                 background-color: #65b1187a;
             }
         }
-        
     }
 
     h3 {
@@ -222,10 +214,8 @@ a {
         color: black;
         margin: 0%;
         padding: 0%;
-
     }
 }
-
 
 #root {
     display: flex;
@@ -257,28 +247,27 @@ footer {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
 
     .header {
-        // margin-top: 30px;
-        // display: grid;
-        // grid-template-columns: 6fr 0.5fr 1fr;
-        // align-items: center;
-        // border-top: 2px solid #ffffff;
-        // border-bottom: 2px solid #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    h1{
-        font-size: 30px;
-    }
-    .logoWrapper{
-        display: flex;
-        justify-content: center;
-        width: 3rem;
-        margin: auto;
-    }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .logoWrapper {
+            display: flex;
+            justify-content: center;
+            width: 3rem;
+            margin: auto;
+            margin-bottom: 1rem;
+
+        }
+
         img {
             width: 100%;
             object-fit: contain;
@@ -286,17 +275,17 @@ footer {
             border: 3px dotted white;
             padding: 8px;
         }
-    
+
     }
 
     footer {
         color: #ffffff;
         display: flex;
         justify-content: space-around;
-        p{
+
+        p {
             font-size: 1rem;
             padding: 1rem;
         }
     }
 }
-

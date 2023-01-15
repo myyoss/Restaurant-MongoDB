@@ -49,7 +49,12 @@ function handleAdd(ev) {
                     name = name.value;
                     price = price.value;
                     img = img.value;
-                    return [4 /*yield*/, axios.post('/add-product', { category: category, name: name, price: price, img: img })];
+                    return [4 /*yield*/, axios.post("/add-product", {
+                            category: category,
+                            name: name,
+                            price: price,
+                            img: img
+                        })];
                 case 1:
                     data = (_b.sent()).data;
                     console.log(data);
@@ -63,10 +68,10 @@ function handleGetAllProducts(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-all-products').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-all-products").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -80,10 +85,10 @@ function handleGetProductByNameIsraeli(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-product-by-israeli').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-product-by-israeli").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -97,10 +102,10 @@ function handleGetProductByNameAmerican(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-product-by-american').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-product-by-american").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -114,10 +119,10 @@ function handleGetProductByNameItalian(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-product-by-italian').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-product-by-italian").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -131,10 +136,10 @@ function handleGetProductByNameJapanese(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-product-by-japanese').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-product-by-japanese").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -148,10 +153,10 @@ function handleGetProductByNameDrinks(ev) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios.get('/get-product-by-drinks').then(function (_a) {
+                case 0: return [4 /*yield*/, axios.get("/get-product-by-drinks").then(function (_a) {
                         var data = _a.data;
                         console.log(data);
-                        var root = document.querySelector('#root');
+                        var root = document.querySelector("#root");
                         renderAll(root, data);
                     })];
                 case 1:
@@ -169,7 +174,10 @@ function handleUpdatePrice(ev, productId) {
                 case 0:
                     console.log(ev, productId);
                     price = ev.target.value;
-                    return [4 /*yield*/, axios.patch('/update-product-price', { productId: productId, price: price })];
+                    return [4 /*yield*/, axios.patch("/update-product-price", {
+                            productId: productId,
+                            price: price
+                        })];
                 case 1:
                     data = (_a.sent()).data;
                     loadPage(ev);
@@ -186,7 +194,10 @@ function handleUpdateName(ev, productId) {
                 case 0:
                     console.log(ev, productId);
                     name = ev.target.value;
-                    return [4 /*yield*/, axios.patch('/update-product-name', { productId: productId, name: name })];
+                    return [4 /*yield*/, axios.patch("/update-product-name", {
+                            productId: productId,
+                            name: name
+                        })];
                 case 1:
                     data = (_a.sent()).data;
                     loadPage(ev);
@@ -200,7 +211,9 @@ function handleDelete(productId) {
         var data;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios["delete"]('/delete-product', { data: { productId: productId } })];
+                case 0: return [4 /*yield*/, axios["delete"]("/delete-product", {
+                        data: { productId: productId }
+                    })];
                 case 1:
                     data = (_a.sent()).data;
                     this.handleGetAllProducts();
@@ -210,7 +223,7 @@ function handleDelete(productId) {
     });
 }
 function renderAll(root, data) {
-    var html = '';
+    var html = "";
     data.forEach(function (product) {
         html += "<div class=\"product\">\n        <div class=\"productName\"><span style=\"color: #000;\"></span>" + product.name + "</div>\n        <div class=\"productprice\"><span style=\"color: #000;\"></span>" + product.price + "&#8362;\n        </div>\n        <div class=\"imgWrapper\"><img src=\"" + product.img + "\" alt=\"\"></div>\n        <div><h3>Change Details:<h/3></div>\n        <div class=\"updatesWrapper\">\n        <div><input type=\"text\" placeholder=\"name\" value=\"" + product.name + "\" onblur=\"handleUpdateName(event, '" + product._id + "')\"/></div>\n        <div><input type=\"text\" placeholder=\"price\" value=\"" + product.price + "\" onblur=\"handleUpdatePrice(event, '" + product._id + "')\"/></div>\n        </div>\n        <div class=\"buttonsWrapper\">\n        <div class=\"UpdateDetails\"><button>Update Details</button></div>\n        <div class=\"DeleteItem\"><button onclick=\"handleDelete('" + product._id + "')\">Delete Item</button></div>\n        </div>\n\n\n        </div>\n        ";
     });
