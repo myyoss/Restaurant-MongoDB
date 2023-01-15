@@ -232,6 +232,10 @@ footer .social {
     padding: 8px;
   }
 
+  .product {
+    display: inline-block;
+  }
+
   footer {
     color: #ffffff;
     display: flex;
