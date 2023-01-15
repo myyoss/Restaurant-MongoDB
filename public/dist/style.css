@@ -233,6 +233,12 @@ footer .social {
     padding: 8px;
   }
 
+  .buttonsWrapper .UpdateDetails button,
+.buttonsWrapper .DeleteItem button {
+    font-size: 0.6rem;
+    border-radius: 2px;
+  }
+
   footer {
     color: #ffffff;
     display: flex;

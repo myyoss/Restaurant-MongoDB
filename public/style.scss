@@ -271,23 +271,17 @@ footer {
 
     }
 
-    // .product {
+    .buttonsWrapper {
 
-    //     .imgWrapper {
-    //         width: 10rem;
-    //         height: 10rem;
-    //         padding-top: 1rem;
-    //         margin: auto;
+        .UpdateDetails,
+        .DeleteItem {
 
-    //         img {
-    //             width: 100%;
-    //             max-height: 100px;
-    //             object-fit: contain;
-    //             transition: all .3s ease-in-out;
-    //         }
-    //     }
-    // }
-
+            button {
+                font-size: 0.6rem;
+                border-radius: 2px;
+            }
+        }
+    }
 
     footer {
         color: #ffffff;
