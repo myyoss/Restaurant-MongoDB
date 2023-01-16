@@ -21,8 +21,9 @@ body button {
   background-color: #ffffff;
 }
 
-a {
+* a {
   text-decoration: none;
+  color: #000;
 }
 
 .header {
@@ -64,7 +65,7 @@ a {
   flex-wrap: wrap;
   padding: 4px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 2rem;
   gap: 0.6rem;
   border-top: 1px solid white;
 }
@@ -101,13 +102,14 @@ a {
   margin: 0%;
   padding: 0%;
 }
-.nav .add .selectWrapper .select {
+.nav .add .selectWrapper select {
   height: 22px;
   font-size: medium;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  color: black;
 }
 
 .addTitle,
@@ -126,6 +128,7 @@ a {
 }
 .sorts button {
   border-radius: 2px;
+  color: #000000;
 }
 
 .product {
@@ -245,6 +248,10 @@ footer .social {
     margin-top: 10px;
     border: 3px dotted white;
     padding: 8px;
+  }
+
+  .nav .add .inputSubmitProduct input {
+    border-radius: 0px;
   }
 
   .buttonsWrapper .UpdateDetails button,
