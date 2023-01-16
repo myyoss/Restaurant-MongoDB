@@ -104,8 +104,10 @@ function renderAll(root, data) {
         <div class="imgWrapper"><img src="${product.img}" alt=""></div>
         <div><h3>Change Details:<h/3></div>
         <div class="updatesWrapper">
-        <div><input type="text" placeholder="name" value="${product.name}" onblur="handleUpdateName(event, '${product._id}')"/></div>
-        <div><input type="text" placeholder="price" value="${product.price}" onblur="handleUpdatePrice(event, '${product._id}')"/></div>
+        <div class="updateName"><h4>Name</h4></div>
+        <div><input type="text" value="${product.name}" onblur="handleUpdateName(event, '${product._id}')"/></div>
+        <div class="updatePrice"><h4>Price</h4></div>
+        <div><input type="text" value="${product.price}" onblur="handleUpdatePrice(event, '${product._id}')"/></div>
         </div>
         <div class="buttonsWrapper">
         <div class="UpdateDetails"><button>Update Details</button></div>

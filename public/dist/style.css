@@ -147,13 +147,13 @@ body button {
 }
 .product .imgWrapper {
   width: 10rem;
-  height: 10rem;
+  height: 9rem;
   padding-top: 1rem;
   margin: auto;
 }
 .product .imgWrapper img {
   width: 100%;
-  max-height: 100px;
+  max-height: 100%;
   object-fit: contain;
   transition: all 0.3s ease-in-out;
 }
@@ -179,6 +179,13 @@ body button {
   font-size: medium;
   border-radius: 2px;
   border-width: 1px;
+}
+.product .updatesWrapper .updateName h4, .product .updatesWrapper .updatePrice h4 {
+  margin: 0%;
+  padding: 0%;
+  color: gray;
+  font-size: medium;
+  font-weight: 200;
 }
 .product .buttonsWrapper {
   display: flex;
