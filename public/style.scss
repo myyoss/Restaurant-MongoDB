@@ -135,6 +135,11 @@ body {
     padding-left: 10px;
     border-top: 1px solid white;
 
+    .allSortsSpan {
+        color: #ff9100;
+        font-weight: bold;
+    }
+
     .sortsSpan {
         color: #ff0000;
         // font-weight: bold;
@@ -288,6 +293,7 @@ footer {
             margin-top: 10px;
             border: 3px dotted white;
             padding: 8px;
+            
         }
 
     }

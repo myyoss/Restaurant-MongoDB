@@ -123,6 +123,10 @@ body button {
   padding-left: 10px;
   border-top: 1px solid white;
 }
+.sorts .allSortsSpan {
+  color: #ff9100;
+  font-weight: bold;
+}
 .sorts .sortsSpan {
   color: #ff0000;
 }
