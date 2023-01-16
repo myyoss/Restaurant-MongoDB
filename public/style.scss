@@ -58,6 +58,7 @@ a {
     padding: 10px 10px;
     border-radius: 2px;
     border-bottom: 2px solid #ffffff;
+    color: #000;
 
     .add {
         display: flex;
@@ -131,6 +132,11 @@ a {
 .sorts {
     padding-left: 10px;
     border-top: 1px solid white;
+
+    .sortsSpan {
+        color: #ff0000;
+        // font-weight: bold;
+    }
 
     button {
         border-radius: 2px;
