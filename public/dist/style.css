@@ -61,8 +61,11 @@ a {
   justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 4px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   gap: 0.6rem;
+  border-top: 1px solid white;
 }
 .nav .add .inputFields {
   display: flex;
@@ -100,15 +103,22 @@ a {
 .nav .add .selectWrapper .select {
   height: 22px;
   font-size: medium;
-  color: #bd1c1c;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
 }
 
+.addTitle,
+.sortTitle {
+  color: gray;
+  font-size: medium;
+  padding-left: 10px;
+}
+
 .sorts {
   padding-left: 10px;
+  border-top: 1px solid white;
 }
 .sorts button {
   border-radius: 2px;
@@ -235,7 +245,7 @@ footer .social {
 
   .buttonsWrapper .UpdateDetails button,
 .buttonsWrapper .DeleteItem button {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     border-radius: 2px;
   }
 
@@ -245,7 +255,7 @@ footer .social {
     justify-content: space-around;
   }
   footer p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     padding: 1rem;
   }
 }
