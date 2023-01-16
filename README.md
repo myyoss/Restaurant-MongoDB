@@ -3,9 +3,9 @@
 LIVE DEMO:
 https://restaurant-mongoodb.onrender.com/
 
-F&amp;S Global Delicious Restaurant WEB APP
+F&amp;S ERP World Delicious Restaurant WEB APP
 
-CRUD
+CRUD- Owners App
 
 Owner can Add item, Update item, Deletet item, Sort items by categpries.
 
