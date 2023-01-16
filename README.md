@@ -7,7 +7,7 @@ F&amp;S ERP World Tasty 😋 Restaurant WEB APP
 
 CRUD- Owners App
 
-Owner can Add item, Update item, Deletet item, Sort items by categpries.
+Owner can create new item, Update item, Deletet item, Sort items by categpries.
 
 
 
