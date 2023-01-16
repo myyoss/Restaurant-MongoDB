@@ -3,7 +3,7 @@
 LIVE DEMO:
 https://restaurant-mongoodb.onrender.com/
 
-F&amp;S ERP World Delicious Restaurant WEB APP
+F&amp;S ERP World Tasty 😋 Restaurant WEB APP
 
 CRUD- Owners App
 
