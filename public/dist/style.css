@@ -185,12 +185,18 @@ body button {
   justify-content: space-between;
   align-items: center;
 }
+.product .buttonsWrapper a {
+  text-decoration: none;
+  color: #000;
+}
 .product .buttonsWrapper button {
   font-size: 1rem;
   border-radius: 2px;
+  color: #000;
 }
 .product .buttonsWrapper .DeleteItem button {
   background-color: #ff91007a;
+  color: #000;
 }
 .product .buttonsWrapper .UpdateDetails button {
   background-color: #65b1187a;
