@@ -10,6 +10,7 @@ body {
 }
 body h1 {
   font-size: 60px;
+  color: #000;
 }
 body button {
   font-size: large;
